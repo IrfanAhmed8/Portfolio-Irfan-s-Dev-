@@ -1,0 +1,81 @@
+.home-nav {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+
+    width: fit-content;
+    padding: 1rem 2.5rem;
+
+    border-radius: 999px;
+
+    /* Glass Effect */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    /* Glow */
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(59, 130, 246, 0.15);
+
+    z-index: 1000;
+
+    transition: all 0.3s ease;
+}
+
+.home-nav:hover {
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+.home-nav a {
+    position: relative;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+}
+
+.home-nav a:hover {
+    color: #60a5fa;
+}
+
+/* Animated underline */
+.home-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0%;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    transition: width 0.3s ease;
+}
+
+.home-nav a:hover::after {
+    width: 100%;
+}
+a{
+    font-size: larger;
+    font-weight: bolder;
+}

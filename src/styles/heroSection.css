@@ -1,0 +1,47 @@
+.hero-section {
+  width: 90%;
+  margin: 40px auto 0;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background-color: rgb(15, 15, 49);
+}
+
+.hero-section:hover {
+  border-color: #8b5cf6;
+  box-shadow:
+    0 0 10px #3b82f6,
+    0 0 20px #8b5cf6,
+    0 0 40px rgba(139, 92, 246, 0.4);
+}
+h1{
+  font-weight: bolder;
+
+}
+p{
+  font-size: larger;
+}
+.hero-text h1 {
+  position: relative;
+  display: inline-block;
+}
+.hero-text h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #8b5cf6
+  );
+
+  transition: width 0.3s ease;
+}
+.hero-text h1:hover::after {
+  width: 100%;
+}
