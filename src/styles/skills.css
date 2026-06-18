@@ -2,14 +2,13 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
-  justify-items: left;
-  border-radius: 20px;
-  margin: 30px 30px 100px 0px;
-  
+  justify-items: center;
+
 }
-.skills{
+
+.skills {
   width: 90%;
-  margin-left: 85px;
+  margin: 40px auto;
 }
 .skill-box {
   width: 150px;
@@ -20,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 210px;
+  
   transition: all 0.3s ease;
 }
 
@@ -42,6 +41,7 @@
   font-weight: bolder;
   transition: all 0.3s ease;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 .skills-title:hover {
   text-shadow:
@@ -67,4 +67,19 @@
 }
 .skills-title:hover::after {
   width: 100%;
+}
+.skills {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: all 0.35s ease;
+}
+
+.skills:hover {
+  border-color: rgba(139, 92, 246, 0.35);
+
+  box-shadow:
+    0 20px 50px rgba(59, 130, 246, 0.08),
+    0 20px 50px rgba(139, 92, 246, 0.08);
+
+  transform: translateY(-3px);
 }

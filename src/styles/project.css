@@ -1,12 +1,12 @@
 .project-container {
-  width: 96.4%;
   border-radius: 20px;
-  padding: 2rem;
-  margin-left: 60px;
+   width: 90%;
+  margin: 40px auto;
+  padding: 2rem 0;
 }
 
 .project-list {
-  margin-right: 3rem;
+  
   padding-top: 2rem;
 }
 h1 {
@@ -124,4 +124,18 @@ h1 {
   box-shadow:
     0 8px 25px rgba(59, 130, 246, 0.4),
     0 0 20px rgba(139, 92, 246, 0.3);
+}
+.project-container {
+  border: 1px solid transparent;
+  transition: all 0.35s ease;
+}
+
+.project-container:hover {
+  border-color: rgba(139, 92, 246, 0.35);
+
+  box-shadow:
+    0 20px 50px rgba(59, 130, 246, 0.08),
+    0 20px 50px rgba(139, 92, 246, 0.08);
+
+  transform: translateY(-3px);
 }
