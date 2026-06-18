@@ -1,6 +1,6 @@
 import React from 'react'
 import portfolioImg from '../assets/profile.png'
-import '../styles/HeroSection.css';
+import '../styles/heroSection.css';
 function HeroSection() {
   return (
     <div id='home' data-aos="fade-up" className="hero-section" style={{display:'flex',alignItems: "center",marginTop:"150px"}}>
